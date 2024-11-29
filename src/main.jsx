@@ -8,6 +8,7 @@ import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Produk from './pages/Produk.jsx'
 import DataProduk from './pages/DataProduk.jsx'
+import Grafik from './pages/Grafik.jsx'
 
 
 const router = createBrowserRouter([
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path:"/about",
         element:<About />,
+      },
+      {
+        path:"/grafik",
+        element:<Grafik />,
       }
     ],
   },
