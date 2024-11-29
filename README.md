@@ -10,3 +10,6 @@ Currently, two official plugins are available:
 install node & react:
 - npm create vite@latest day5
 - npm i
+
+pindah pindah halaman (routing):
+ npm i react-router-dom
