@@ -9,6 +9,10 @@ import About from './pages/About.jsx'
 import Produk from './pages/Produk.jsx'
 import DataProduk from './pages/DataProduk.jsx'
 import Grafik from './pages/Grafik.jsx'
+import Product from './pages/Product.jsx'
+import Detail from './pages/Detail.jsx'
+import Register from './pages/Register.jsx'
+import Camera from './pages/Camera.jsx'
 
 
 const router = createBrowserRouter([
@@ -37,6 +41,22 @@ const router = createBrowserRouter([
       {
         path:"/grafik",
         element:<Grafik />,
+      },
+      {
+        path:"/product",
+        element:<Product />,
+      },
+      {
+        path: "/detail/:id",
+        element:<Detail />
+      },
+      {
+        path: "/register",
+        element:<Register />
+      },
+      {
+        path:"/camera",
+        element:<Camera />
       }
     ],
   },

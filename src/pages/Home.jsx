@@ -46,7 +46,7 @@ function Banner() {
         <Typography className="mt-2">
           Explore the latest and greatest games at the best prices.
         </Typography>
-        <Button className="mt-4" color="blue">
+        <Button className="mt-4" color="gray">
           Explore Now
         </Button>
       </div>
@@ -68,7 +68,7 @@ function GameCard({ game }) {
         <Typography className="text-gray-600">{game.harga}</Typography>
       </CardBody>
       <CardFooter>
-        <Button fullWidth color="blue">
+        <Button fullWidth color="gray">
           Buy Now
         </Button>
       </CardFooter>

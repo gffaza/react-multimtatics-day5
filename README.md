@@ -12,4 +12,4 @@ install node & react:
 - npm i
 
 pindah pindah halaman (routing):
- npm i react-router-dom
+- npm i react-router-dom

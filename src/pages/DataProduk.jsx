@@ -40,7 +40,7 @@ const DataProdukTable = () => {
     <Card className="mt-6 w-full">
       <CardHeader
         variant="gradient"
-        color="blue"
+        color="gray"
         className="mb-4 p-4 text-white"
       >
         <Typography variant="h5" color="white">
