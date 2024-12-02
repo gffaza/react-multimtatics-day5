@@ -46,7 +46,7 @@ function Banner() {
         <Typography className="mt-2">
           Explore the latest and greatest games at the best prices.
         </Typography>
-        <Button className="mt-4" color="gray">
+        <Button to="/produk" className="mt-4" color="gray">
           Explore Now
         </Button>
       </div>

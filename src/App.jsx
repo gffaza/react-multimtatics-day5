@@ -74,11 +74,11 @@ export function StickyNavbar() {
           <Link to="/camera">Camera</Link>
         </Typography>
       </li>
-      <li className="p-1 font-normal">
+      <li className="p-2 pl-4 pr-4 font-normal bg-gray-900 rounded-lg">
         <Typography
           variant="small"
-          color="blue-gray"
-          className="flex items-center"
+          color="white"
+          className="flex items-center font-bold"
         >
           <Link to="/register">Regsiter</Link>
         </Typography>
@@ -94,6 +94,7 @@ export function StickyNavbar() {
             variant="h6"
             className="mr-4 cursor-pointer py-1.5 font-medium"
           >
+            
             <Link to="/">Home</Link>
           </Typography>
           <div className="flex items-center gap-4">

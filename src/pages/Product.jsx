@@ -40,47 +40,51 @@ export default function Product() {
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {dataProduk.map((item, index) => (
-            <Card key={index} className="shadow-md rounded-lg overflow-hidden">
-              <CardHeader color="blue-gray" className="relative h-56 m-0">
+            <Card key={index} className="shadow-md rounded-lg overflow-hidden justify-between">
+              <CardHeader color="white" className="relative h-56 m-0">
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-contain"
                 />
               </CardHeader>
               <CardBody className="p-6">
                 <Typography
                   variant="h5"
                   color="blue-gray"
-                  className="mb-2 font-bold"
+                  className="mb-2 font-bold align-top"
                 >
                   {item.title}
                 </Typography>
-                <Typography
+                {/* <Typography
                   variant="paragraph"
                   color="gray"
                   className="text-sm mb-4 h-16 overflow-hidden"
                 >
                   {item.description}
-                </Typography>
-                <Typography
-                  variant="h6"
-                  color="blue-gray"
-                  className="mb-4 font-semibold"
-                >
-                  $ {item.price.toLocaleString()}
-                </Typography>
-                <div className="flex text-left">
-                  <Button
-                    size="sm"
-                    color="gray"
-                    ripple="light"
-                    className="w-full"
-                  >
-                    <Link to={`/detail/${item.id}`}>Detail</Link>
-                  </Button>
-                </div>
+                </Typography> */}
+                
               </CardBody>
+              <div class="grid grid-cols-2 gap-4 m-4">
+                  <Typography
+                    variant="h6"
+                    color="blue-gray"
+                    className="mb-4 font-semibold"
+                  >
+                    $ {item.price.toLocaleString()}
+                  </Typography>
+                  
+                  <div className="flex flex-col justify-between text-left">
+                    <Button
+                      size="sm"
+                      color="gray"
+                      ripple="light"
+                      className="w-full"
+                    >
+                      <Link to={`/detail/${item.id}`}>Detail</Link>
+                    </Button>
+                  </div>
+                </div>
             </Card>
           ))}
         </div>

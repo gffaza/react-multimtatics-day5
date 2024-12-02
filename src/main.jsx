@@ -13,6 +13,9 @@ import Product from './pages/Product.jsx'
 import Detail from './pages/Detail.jsx'
 import Register from './pages/Register.jsx'
 import Camera from './pages/Camera.jsx'
+import FormIdb from './pages/FormIdb.jsx'
+import Importfile from './pages/Importfile.jsx'
+import Exportfile from './pages/Exportfile.jsx'
 
 
 const router = createBrowserRouter([
@@ -57,6 +60,18 @@ const router = createBrowserRouter([
       {
         path:"/camera",
         element:<Camera />
+      },
+      {
+        path:"/formidb",
+        element:<FormIdb />
+      },
+      {
+        path: "/importfile",
+        element:<Importfile />
+      },
+      {
+        path: "/exportfile",
+        element:<Exportfile />
       }
     ],
   },
