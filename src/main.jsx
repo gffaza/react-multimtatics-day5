@@ -66,11 +66,11 @@ const router = createBrowserRouter([
         element:<FormIdb />
       },
       {
-        path: "/importfile",
+        path: "/import",
         element:<Importfile />
       },
       {
-        path: "/exportfile",
+        path: "/export",
         element:<Exportfile />
       }
     ],
